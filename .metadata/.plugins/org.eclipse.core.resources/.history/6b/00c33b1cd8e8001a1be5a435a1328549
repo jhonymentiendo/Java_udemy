@@ -1,0 +1,11 @@
+package spring.tutorial;
+
+//import com.sun.org.slf4j.internal.Logger;
+
+public class HelloMaven {
+
+	//private final static Logger log;
+	public static void main(String[] args) {
+		System.out.println("Prueba");
+	}
+}

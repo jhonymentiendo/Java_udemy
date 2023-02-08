@@ -1,0 +1,28 @@
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+
+
+class Countdown{
+	
+	public void docountdown() {
+		String color;
+		
+		switch (Thread.currentThread().getName()) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+	}
+	
+	
+}

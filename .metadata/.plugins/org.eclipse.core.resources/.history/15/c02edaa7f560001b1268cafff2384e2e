@@ -1,0 +1,46 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Message {
+	private String message;
+	private boolean emptyu = false;
+
+	public synchronized String read() {
+		while (emptyu) {
+
+		}
+		emptyu = true;
+		return message;
+	}
+
+	public synchronized void write(String msg) {
+		while (!emptyu) {
+
+		}
+		emptyu = false;
+		message = msg;
+	}
+}
+
+
+class Writer implements Runnable{
+
+	private Message message;
+	
+	public Writer(Message message) {
+		this.message = message;
+	}
+	
+	@Override
+	public void run() {
+		String[] mensajes= {"mensaje 1","mensaje 2","mensaje 3","mensaje 4","mensaje 5","mensaje 6"};
+	}
+	
+}

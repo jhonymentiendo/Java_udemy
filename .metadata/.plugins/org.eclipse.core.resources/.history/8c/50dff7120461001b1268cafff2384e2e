@@ -1,0 +1,14 @@
+package m1;
+
+public class Main {
+
+}
+
+class MyProducer implements Runnable{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+

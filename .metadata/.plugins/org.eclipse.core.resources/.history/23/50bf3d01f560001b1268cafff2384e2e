@@ -1,0 +1,27 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+class Message{
+	private String message;
+	private boolean emptyu = false;
+	
+	public synchronized String read() {
+		
+		while (emptyu) {
+			
+		}
+		emptyu = true;
+		return message;
+	}
+	
+	
+	
+}

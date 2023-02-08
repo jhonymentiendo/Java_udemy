@@ -1,0 +1,38 @@
+package m1;
+
+import java.util.List;
+import java.util.Random;
+
+public class Main {
+
+}
+
+class MyProducer implements Runnable{
+	private List<String> buffer;
+	private String color;
+	
+	public MyProducer(List<String> buffer,String color) {
+		this.buffer=buffer;
+		this.color=color;
+	}
+	
+	@Override
+	public void run() {
+		Random random = new Random();
+		String mensajes[]= {"mensaje 1", "mensaje 2", "mensaje 3", "mensaje 4", "mensaje 5","mensaje 6"};
+		
+		for (String msg : mensajes) {
+			try {
+				System.out.println(color + "agragando" +msg);
+				buffer.add(msg);
+				Thread.sleep(random.nextInt(2000));
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}	
+		}
+		System.out.println(color + "agregando EOF y saliendo...");
+		buffer.add(EOF)
+		
+	}
+}
+

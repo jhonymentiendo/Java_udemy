@@ -1,0 +1,23 @@
+package hilos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("main");
+		
+		AnotherThread a = new AnotherThread();
+		
+		a.start();
+		
+		
+		
+		System.out.println("otra vez main");
+		System.out.println("2otra vez main");
+		System.out.println("3otra vez main");
+		System.out.println("4otra vez main");
+		System.out.println("5otra vez main");
+		System.out.println("6otra vez main");
+		
+	}
+
+}

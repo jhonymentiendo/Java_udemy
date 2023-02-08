@@ -1,0 +1,23 @@
+package m1;
+
+import java.util.List;
+
+public class Main {
+
+}
+
+class MyProducer implements Runnable{
+	private List<String> buffer;
+	private String color;
+	
+	public MyProducer(List<String> buffer,String color) {
+		this.buffer=buffer;
+		this.color=color;
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}
+

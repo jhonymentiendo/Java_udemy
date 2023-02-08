@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ThreadColor.java&apos; to &apos;CountMultihilos/src/(default package)&apos;&#x0A;- Original project: &apos;hilos&apos;&#x0A;- Destination element: &apos;CountMultihilos/src/(default package)&apos;&#x0A;- Original element: &apos;hilos.ThreadColor.java&apos;" description="Copy compilation unit" destination="=CountMultihilos/src&lt;" element1="/src&lt;hilos{ThreadColor.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1611785281388" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,56 @@
+public class Main {
+
+	public static void main(String[] args) {
+		Countdown cntd = new Countdown();
+		
+		CountdownThread t1 = new CountdownThread(cntd);
+		t1.setName("Hilo 1");
+		CountdownThread t2 = new CountdownThread(cntd);
+		t2.setName("hilo 2");
+		
+		t1.start();
+		t2.start();
+
+	}
+}
+
+
+
+class Countdown{
+	
+	public void docountdown() throws InterruptedException {
+		String color;
+		
+		switch (Thread.currentThread().getName()) {
+		case "thread 1":
+			color = ThreadColor.ANSI_C;
+			break;
+		case "thread 2":
+			color = ThreadColor.ANSI_P;
+			break;
+		default:
+			color = ThreadColor.ANSI_G;
+			break;
+		}
+		
+		for (int i=0;i>0;i--) {
+			System.out.println(color + Thread.currentThread().getName() + ": i =" + i);
+			Thread.sleep(2000);
+		}
+	}
+}
+
+
+class CountdownThread extends Thread{
+	private Countdown threadcountdown;
+	
+	public CountdownThread(Countdown countdown) {
+		this.threadcountdown=countdown;
+	}
+	
+	@Override
+	public void run() {
+		threadcountdown.docountdown();
+	}
+	
+}
