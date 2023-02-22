@@ -4,7 +4,7 @@ public class Main {
 		Countdown cntd = new Countdown();
 		
 //		cntd.docountdown();
-		
+		//comentario que no tiene impacto
 		CountdownThread t1 = new CountdownThread(cntd);
 		t1.setName("thread 1");
 		CountdownThread t2 = new CountdownThread(cntd);
