@@ -9,9 +9,12 @@ public class Main {
 		t1.setName("thread 1");
 		CountdownThread t2 = new CountdownThread(cntd);
 		t2.setName("thread 2");
+		CountdownThread t3 = new CountdownThread(cntd);
+		t3.setName("thread 3");
 		
 		t1.start();
 		t2.start();
+		t3.start();
 
 	}
 }
